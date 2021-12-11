@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+:root {
+  --var-backcol-container-wripper: #000;
+  --var-backcol-component-body: #fff;
+  --var-backcol-component-h1: #44413e;
+  --var-backcol-component-input: #44413e;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: var(--var-backcol-container-wripper);
+}
+
+.component {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 360px;
+  height: 400px;
+  padding: 30px;
+  border-radius: 4px;
+  background-color: var(--var-backcol-component-body);
+}
+
+.component h1.title {
+  font-family: "Montserrat", sans-serif;
+  color: var(--var-backcol-component-h1);
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.1px;
+  text-align: center;
+}
+
+.component .form-control {
+  position: relative;
+}
+
+.component .form-control .form_select-guest {
+  width: 300px;
+  height: 50px;
+  margin-top: 30px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: solid 1px #ddd;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--var-backcol-component-input);
+  background-color: inherit;
+}
+
+.component .form-control .guest-control {
+  width: 65px;
+  height: 20px;
+  position: absolute;
+  top: 45px;
+  right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.component .form-control .guest-control button.btn-minus {
+  border: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/icons-minus.png);
+  background-color: inherit;
+}
+
+.component .form-control .guest-control button.btn-plus {
+  border: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/icons-plus.png);
+  background-color: inherit;
+}
+
+.component .form-control .form_select-date {
+  width: 300px;
+  height: 50px;
+  margin-top: 20px;
+  padding: 10px 15px 10px 20px;
+  border-radius: 4px;
+  border: solid 1px #ddd;
+  font-size: 15px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--var-backcol-component-input);
+  background-color: inherit;
+}
+
+.component .form-control .form_select-time {
+  width: 300px;
+  height: 50px;
+  margin-top: 20px;
+  padding: 10px 15px 10px 20px;
+  border-radius: 4px;
+  border: solid 1px #ddd;
+  font-size: 15px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--var-backcol-component-input);
+  background-color: inherit;
+}
+
+.component .form-control .btn-submit {
+  width: 300px;
+  height: 50px;
+  margin-top: 40px;
+  padding: 13px 0;
+  border-radius: 4px;
+  background-color: #e16640;
+  outline: none;
+  border: 0;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: -0.1px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
